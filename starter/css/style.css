@@ -1,12 +1,22 @@
 * {
   box-sizing: border-box;
+  color: rgb(89, 36, 132);
+
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   line-height: 1.5;
+  background-color: lavenderblush;
+
+  
+}
+
+.page-section {
+  padding: 20px;
+  display: flex;
 }
 
 h1,
@@ -21,3 +31,140 @@ h6 {
 p {
   margin: 0;
 }
+h1 { 
+color: lavenderblush;
+  text-shadow: 1px 1px 2px black, 0 0 25px rgb(149, 115, 176), 0 0 5px rgb(89, 36, 132);
+  font-size: 50px;
+}
+
+
+img {
+  
+  border-radius: 10px;
+  width: 260px;
+  height: 260px;
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-right: 30px;
+  
+}
+
+header { 
+  display: inline-flex;
+  justify-content:space-between;
+  align-items: center;
+  width: 100%;
+  background-color:  rgb(149, 115, 176);
+  background-image: linear-gradient(rgb(149, 115, 176), lavenderblush)
+  ;
+ 
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: right;
+  top: 0px;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul li {
+  list-style: none;
+}
+
+.navbar ul li a {
+  display: block;
+  padding: 30px;
+  text-decoration: none;
+}
+
+.navbar ul li a:hover {
+  color: lavenderblush
+}
+
+.hero-banner {
+  display: block;
+  background-repeat: no-repeat;
+  background-image: url(https://images.unsplash.com/photo-1583339522870-0d9f28cef33f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHB1cnBsZSUyMGFic3RyYWN0fGVufDB8fDB8fHww);
+  background-size: cover;
+  padding: 100px;
+
+}
+
+.page-section h2 {
+ float: left;
+ width: 40%;
+ display: flex;
+ justify-content: right;
+ margin-right: 100px;
+  
+}
+
+.float-right {
+float: right;
+width: 60%;
+}
+
+
+#work-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(200px, auto);
+}
+.grid {
+  display: flex;
+  border-style: solid;
+  border-width: 6px;
+  border-color: rgb(149, 115, 176) ;
+  text-decoration:double;
+  justify-content: left;
+}
+.grid:hover {
+  border-color: rgb(160, 8, 171);
+  filter: blur(0.5px);
+}
+#Website1 {
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
+#Website2 {
+  grid-column: 1;
+  grid-row: 2;
+}
+#Website3 {
+  grid-column: 2;
+  grid-row: 2;
+}
+#Website4 {
+  grid-column: 1;
+  grid-row: 3;
+}
+#Website5 {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+#contact ul {
+  display: flex;
+  justify-content: right;
+}
+
+#contact ul li {
+  list-style: none;
+  padding-left: 30px;
+}
+
+#contact ul li a {
+
+  text-decoration: none;
+}
+
+#contact ul li a:hover {
+  color:rgb(149, 115, 176);
+}
+
+
